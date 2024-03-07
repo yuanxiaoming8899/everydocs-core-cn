@@ -1,87 +1,190 @@
-# EveryDocs Core
+<div class="Box-sc-g0xbh4-0 bJMeLZ js-snippet-clipboard-copy-unpositioned" data-hpc="true"><article class="markdown-body entry-content container-lg" itemprop="text"><div class="markdown-heading" dir="auto"><h1 align="center" tabindex="-1" class="heading-element" dir="auto">
+	<a target="_blank" rel="noopener noreferrer" href="https://github.com/mindsdb/mindsdb_native/blob/stable/assets/MindsDBColorPurp@3x.png?raw=true"><img width="300" src="https://github.com/mindsdb/mindsdb_native/raw/stable/assets/MindsDBColorPurp@3x.png?raw=true" alt="思维数据库" style="max-width: 100%;"></a>
+	<br>
+</h1><a id="" class="anchor" aria-label="永久链接：" href="#"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<div align="center" dir="auto">
+<p dir="auto">
+	<a href="https://github.com/mindsdb/mindsdb/actions"><img src="https://github.com/mindsdb/mindsdb/actions/workflows/release.yml/badge.svg" alt="MindsDB 版本" style="max-width: 100%;"></a>
+	<a href="https://www.python.org/downloads/" rel="nofollow"><img src="https://camo.githubusercontent.com/c6a29eb405aa3d800e117f8ee38f514d43830a2ff722ec76cc86e37babe63f0e/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f707974686f6e2d332e382e78253743253230332e392e78253743253230332e31302e78253743253230332e31312e782d627269676874677265656e2e737667" alt="支持Python" data-canonical-src="https://img.shields.io/badge/python-3.8.x%7C%203.9.x%7C%203.10.x%7C%203.11.x-brightgreen.svg" style="max-width: 100%;"></a>
+	<a href="https://pypi.org/project/MindsDB/" rel="nofollow"><img src="https://camo.githubusercontent.com/26777ea45e66d3750103862ebb811cf8c78e3518d79f631a574347f8bba228cc/68747470733a2f2f62616467652e667572792e696f2f70792f4d696e647344422e737667" alt="PyPi版本" data-canonical-src="https://badge.fury.io/py/MindsDB.svg" style="max-width: 100%;"></a>
+	<br>
+	<a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/de1b4741ee19c61b4949ed4f74bc66cf47c6d26ffe4888a5d542bd10f42a389c/68747470733a2f2f696d672e736869656c64732e696f2f707970692f646d2f4d696e64736462"><img alt="PyPI - 下载" src="https://camo.githubusercontent.com/de1b4741ee19c61b4949ed4f74bc66cf47c6d26ffe4888a5d542bd10f42a389c/68747470733a2f2f696d672e736869656c64732e696f2f707970692f646d2f4d696e64736462" data-canonical-src="https://img.shields.io/pypi/dm/Mindsdb" style="max-width: 100%;"></a>  <a href="https://hub.docker.com/u/mindsdb" rel="nofollow"><img src="https://camo.githubusercontent.com/188a98522d3d71412bdfce300c58fb62635a30f79b3859518b467d6efb6a2748/68747470733a2f2f696d672e736869656c64732e696f2f646f636b65722f70756c6c732f6d696e647364622f6d696e64736462" alt="Docker 拉取" data-canonical-src="https://img.shields.io/docker/pulls/mindsdb/mindsdb" style="max-width: 100%;"></a>
+	<a href="https://ossrank.com/p/630" rel="nofollow"><img src="https://camo.githubusercontent.com/fae6872931e88be174815ac4fcda01e7c37e8641ff932ff4380fbc973db5440c/68747470733a2f2f736869656c64732e696f2f656e64706f696e743f75726c3d68747470733a2f2f6f737372616e6b2e636f6d2f736869656c642f363330" data-canonical-src="https://shields.io/endpoint?url=https://ossrank.com/shield/630" style="max-width: 100%;"></a>
+	<a href="https://www.mindsdb.com/" rel="nofollow"><img src="https://camo.githubusercontent.com/fc28c8d276a96362c1ec728a11214a2c5e971fdc95709904ba3936126ccb1f49/68747470733a2f2f696d672e736869656c64732e696f2f776562736974653f75726c3d68747470732533412532462532467777772e6d696e647364622e636f6d253246" alt="MindsDB 网站" data-canonical-src="https://img.shields.io/website?url=https%3A%2F%2Fwww.mindsdb.com%2F" style="max-width: 100%;"></a>
+	<a href="https://mindsdb.com/joincommunity" rel="nofollow"><img src="https://camo.githubusercontent.com/918c8c128d708de37d650e8ab32a0c045d366bb29045d2acc4e89f0e9c65eee8/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f736c61636b2d406d696e64736462636f6d6d756e6974792d627269676874677265656e2e7376673f6c6f676f3d736c61636b20" alt="MindsDB 社区" data-canonical-src="https://img.shields.io/badge/slack-@mindsdbcommunity-brightgreen.svg?logo=slack " style="max-width: 100%;"></a>
+	<br>
+</p>
+<div class="markdown-heading" dir="auto"><h3 align="center" tabindex="-1" class="heading-element" dir="auto">
+	<a href="https://www.mindsdb.com?utm_medium=community&amp;utm_source=github&amp;utm_campaign=mindsdb%20repo" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">网站</font></font></a>
+	<span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">| </font></font></span>
+	<a href="https://docs.mindsdb.com?utm_medium=community&amp;utm_source=github&amp;utm_campaign=mindsdb%20repo" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">文档</font></font></a>
+	<span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">| </font></font></span>
+	<a href="https://mindsdb.com/joincommunity" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">社区松弛</font></font></a>
+	<span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">| </font></font></span>
+	<a href="https://github.com/mindsdb/mindsdb/issues?q=is%3Aopen+is%3Aissue+label%3A%22help+wanted%22"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">贡献</font></font></a>
+ 	<span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">| </font></font></span>
+	<a href="https://github.com/mindsdb/mindsdb/discussions/8817" data-hovercard-type="discussion" data-hovercard-url="/mindsdb/mindsdb/discussions/8817/hovercard"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">20K🌟🎉</font></font></a>
+</h3><a id="user-content-website--docs--community-slack--contribute----20k-" class="anchor" aria-label="永久链接： 网站 |  文档 |  社区松弛 |  贡献 |  20K🌟🎉" href="#website--docs--community-slack--contribute----20k-"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+</div>
+<hr>
+<p dir="auto"><a href="https://mindsdb.com?utm_medium=community&amp;utm_source=github&amp;utm_campaign=mindsdb%20repo" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">MindsDB</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">是用于构建定制 AI 的平台，可实现更智能的组织。
+</font></font><a href="https://twitter.com/intent/tweet?text=The%20middleware%20for%20building%20custom%20AI,%20enabling%20smarter%20organizations&amp;url=https://github.com/mindsdb/mindsdb&amp;via=mindsdb&amp;hashtags=ai,opensource" rel="nofollow"><img src="https://camo.githubusercontent.com/a00d957c85627f2862ae61b59289e25f875e9ae40a716efdf5c3e032d6b8f863/68747470733a2f2f696d672e736869656c64732e696f2f747769747465722f75726c2f687474702f736869656c64732e696f2e7376673f7374796c653d736f6369616c" alt="鸣叫" data-canonical-src="https://img.shields.io/twitter/url/http/shields.io.svg?style=social" style="max-width: 100%;"></a></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">我们相信人工智能将帮助每家公司蓬勃发展，但现成的通用人工智能通常不能完全满足他们的需求。</font><font style="vertical-align: inherit;">借助 MindsDB 的近 200 个集成，任何开发人员都可以更快、更安全地创建针对其目的定制的 AI。</font><font style="vertical-align: inherit;">他们的人工智能系统将不断改进自身——实时使用公司自己的数据。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">超越通用人工智能，根据您的特定需求进行定制，使任何开源模型都能为您服务。</font><font style="vertical-align: inherit;">通过数据库、矢量存储和应用程序数据实时服务、微调和训练模型，使您的解决方案由人工智能驱动。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">MindsDB 利用“增强型 SQL”语法引入了人工智能开发的抽象，这是一种全世界开发人员都熟悉的语言：</font></font></p>
+<table>
+<thead>
+<tr>
+<th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">🎯 解决方案</font></font></th>
+<th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">⚙️ SQL 查询示例</font></font></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">🤖</font></font><a href="https://docs.mindsdb.com/sql/api/finetune#example-3-openai-model" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">微调</font></font></a></td>
+<td><code> FINETUNE mindsdb.hf_model FROM postgresql.table; </code></td>
+</tr>
+<tr>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">📚</font></font><a href="https://docs.mindsdb.com/agents/knowledge-bases" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">知识库</font></font></a></td>
+<td><code> CREATE KNOWLEDGE_BASE my_knowledge FROM (SELECT contents FROM drive.files); </code></td>
+</tr>
+<tr>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">🔍</font></font><a href="https://docs.mindsdb.com/integrations/ai-engines/rag" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">语义搜索</font></font></a></td>
+<td><code> SELECT * FROM rag_model WHERE question='What product is best for treating a cold?';  </code></td>
+</tr>
+<tr>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">⏱️</font></font><a href="https://docs.mindsdb.com/sql/tutorials/eeg-forecasting" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">实时预测</font></font></a></td>
+<td><code> SELECT * FROM binance.trade_data WHERE symbol = 'BTCUSDT'; </code></td>
+</tr>
+<tr>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">🕵️</font></font><a href="https://docs.mindsdb.com/agents/agent" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">代理</font></font></a></td>
+<td><code> CREATE AGENT my_agent USING model='chatbot_agent', skills = ['knowledge_base']; </code></td>
+</tr>
+<tr>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">💬</font></font><a href="https://docs.mindsdb.com/agents/chatbot" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">聊天机器人</font></font></a></td>
+<td><code> CREATE CHATBOT slack_bot USING database='slack',agent='customer_support'; </code></td>
+</tr>
+<tr>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">⏲️</font></font><a href="https://docs.mindsdb.com/sql/create/jobs" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">时间驱动的自动化</font></font></a></td>
+<td><code> CREATE JOB twitter_bot ( &lt;sql_query1&gt;, &lt;sql_query2&gt; ) START '2023-04-01 00:00:00';   </code></td>
+</tr>
+<tr>
+<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">🔔</font></font><a href="https://docs.mindsdb.com/sql/create/trigger" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">事件驱动的自动化</font></font></a></td>
+<td><code> CREATE TRIGGER data_updated ON mysql.customers_data (sql_code)</code></td>
+</tr>
+</tbody>
+</table>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">⚡️ 简单示例</font></font></h2><a id="user-content-️-quick-example" class="anchor" aria-label="永久链接：⚡️ 简单示例" href="#️-quick-example"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">通过 AI 模型传递新数据并将结果写回数据库来丰富数据存储，这可以通过几行 AI-SQL 来解决。</font><font style="vertical-align: inherit;">这是一个参考架构：
+</font></font><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/9564b2d162c33f140f8c345dd18b7e50f34fda28ef5ad938ed66204955cb6327/68747470733a2f2f646f63732e676f6f676c652e636f6d2f64726177696e67732f642f652f32504143582d3176546c524f4d546c5869595565636f416f67776a42564930655144595757492d6159356e706378566a664c7a474c364673322d594e2d614f635565574643447a5a44787665596535447877696c69612f7075623f773d3134333826683d373033"><img src="https://camo.githubusercontent.com/9564b2d162c33f140f8c345dd18b7e50f34fda28ef5ad938ed66204955cb6327/68747470733a2f2f646f63732e676f6f676c652e636f6d2f64726177696e67732f642f652f32504143582d3176546c524f4d546c5869595565636f416f67776a42564930655144595757492d6159356e706378566a664c7a474c364673322d594e2d614f635565574643447a5a44787665596535447877696c69612f7075623f773d3134333826683d373033" data-canonical-src="https://docs.google.com/drawings/d/e/2PACX-1vTlROMTlXiYUecoAogwjBVI0eQDYWWI-aY5npcxVjfLzGL6Fs2-YN-aOcUeWFCDzZDxveYe5Dxwilia/pub?w=1438&amp;h=703" style="max-width: 100%;"></a></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">让我们看一下自动化 Shopify 订单分析：</font></font></p>
+<div class="highlight highlight-source-sql notranslate position-relative overflow-auto" dir="auto"><pre><span class="pl-c"><span class="pl-c">--</span>-This query creates a job in MindsDB to analyze Shopify orders.</span>
+<span class="pl-c"><span class="pl-c">--</span>-It predicts customer engagement scores based on recent completed orders</span>
+<span class="pl-c"><span class="pl-c">--</span>-and inserts these insights into a customer_engagement table.</span>
+<span class="pl-c"><span class="pl-c">--</span>-The job runs every minute, providing ongoing updates to the engagement scores.</span>
 
-[![Build Status](https://img.shields.io/github/actions/workflow/status/jonashellmann/everydocs-core/ruby.yml??branch=main&style=flat-square)](https://github.com/jonashellmann/everydocs-core/actions?query=workflow%3ARuby)
-![Lines of Code](https://img.shields.io/tokei/lines/github/jonashellmann/everydocs-core?style=flat-square)
-![License](https://img.shields.io/github/license/jonashellmann/everydocs-core?style=flat-square)
-![GitHub Repo
-Stars](https://img.shields.io/github/stars/jonashellmann/everydocs-core?style=social)
-[![Commit activity](https://img.shields.io/github/commit-activity/y/jonashellmann/everydocs-core?style=flat-square)](https://github.com/jonashellmann/everydocs-core/commits/)
-[![Last commit](https://img.shields.io/github/last-commit/jonashellmann/everydocs-core?style=flat-square)](https://github.com/jonashellmann/everydocs-core/commits/)
+CREATE JOB <span class="pl-c1">mindsdb</span>.<span class="pl-c1">shopify_customer_engagement_job</span> <span class="pl-k">AS</span> (
 
-EveryDocs Core is the server-side part of EveryDocs. This project contains a [web interface](https://github.com/jonashellmann/everydocs-web/). All in all, EveryDocs is a simple Document Management System (DMS) for private use. It contains basic functionality to organize your documents digitally.
+   <span class="pl-c"><span class="pl-c">--</span> Insert into a table insights about customer engagement based on recent Shopify orders</span>
+   <span class="pl-k">INSERT INTO</span> <span class="pl-c1">shopify_insights</span>.<span class="pl-c1">customer_engagement</span> (customer_id, predicted_engagement_score)
+      <span class="pl-k">SELECT</span>
+         <span class="pl-c1">o</span>.<span class="pl-c1">customer_id</span> <span class="pl-k">AS</span> customer_id,
+         <span class="pl-c1">r</span>.<span class="pl-c1">predicted_engagement_score</span> <span class="pl-k">AS</span> predicted_engagement_score
+      <span class="pl-k">FROM</span> <span class="pl-c1">shopify_data</span>.<span class="pl-c1">orders</span> o
+      <span class="pl-k">JOIN</span> <span class="pl-c1">mindsdb</span>.<span class="pl-c1">customer_engagement_model</span> r
+         <span class="pl-k">WHERE</span>
+            <span class="pl-c1">o</span>.<span class="pl-c1">order_date</span> <span class="pl-k">&gt;</span> LAST
+         <span class="pl-k">AND</span> <span class="pl-c1">o</span>.<span class="pl-c1">status</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">'</span>completed<span class="pl-pds">'</span></span>
+      <span class="pl-k">LIMIT</span> <span class="pl-c1">100</span>
+)
+EVERY minute;
+</pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="---This query creates a job in MindsDB to analyze Shopify orders.
+---It predicts customer engagement scores based on recent completed orders
+---and inserts these insights into a customer_engagement table.
+---The job runs every minute, providing ongoing updates to the engagement scores.
 
-## Features
+CREATE JOB mindsdb.shopify_customer_engagement_job AS (
 
-- Uploading PDF documents with a title, description and the date the document was created
-- Organizing documents in folders and subfolders
-- Adding people and processing states to documents
-- Extracting the content from the PDF file for full-text search
-- Searching all documents by title, description or content of the document
-- Creating new accounts (be aware that at the current moment everybody who knows the URL can create new accounts)
-- Authentication via JsonWebToken
-- REST-API for all CRUD operation for documents, folders, persons and processing states
-- Mobile-friendly web UI
-
-## Screenshots of the web interface
-
-![EveryDocs Web - Dashboard](images/dashboard.png)
-![EveryDocs Web - Uploading new document](images/new-document.png)
-
-## Installation
-
-### Docker Compose (recommended)
-
-The easiest way to get started is to use Docker Compose. The ``docker-compose.yaml`` creates three containers for the database, Everydocs Core (available on port 5678) and the web interface (available on port 8080 and 8443).
-
-You may simply need to changed the URL in ``./everydocs-web-config.js`` where EveryDocs Core will be accessible and execute the following command while being inside the source folder of this repository:
-<pre>SECRET_KEY_BASE="$(openssl rand -hex 64)" docker-compose up --build</pre>
-
-### Docker (recommended)
-
-Start the container and make the API accessible on port ``8080`` by running the following commands. Of course, you can change the port in the last command.
-Also make sure to check the folder that is mounted into the container. In this case, the uploaded files are stored in ``/data/everydocs`` on the host.
-<pre>docker run -p 127.0.0.1:8080:5678/tcp -e SECRET_KEY_BASE="$(openssl rand -hex 64)" -v /data/everydocs:/var/everydocs-files jonashellmann/everydocs</pre>
-
-You can configure the application by using the following environment variables:
-- ``EVERYDOCS_DB_ADAPTER``: The database adapter (default: ``mysql2``)
-- ``EVERYDOCS_DB_NAME``: The name of the database (default: ``everydocs``)
-- ``EVERYDOCS_DB_USER``: The user for the database connection (default: ``everydocs``)
-- ``EVERYDOCS_DB_PASSWORD``: The password for the database connection (no default)
-- ``EVERYDOCS_DB_HOST``: The host of the database (default: ``localhost``)
-- ``EVERYDOCS_DB_PORT``: The port of the database (default: ``3306``)
-
-You might want to include this container in a network so it has access to a database container.
-Also there are ways to connect to a database that runs on the host (e.g. see [Stackoverflow](https://stackoverflow.com/questions/24319662/from-inside-of-a-docker-container-how-do-i-connect-to-the-localhost-of-the-mach)).
-
-### Manual Installation (not recommended)
-
-1. Make sure you have Ruby installed. For an installation guide, check here: [Ruby installation guide](https://guides.rubyonrails.org/getting_started.html#installing-rails)
-2. If you haven't installed the Rails Gem, you can run the following command: ``gem install rails``
-3. Download the newest release and unzip it in a location of your own choice.
-4. Configure your database connection by setting the following environment variables: ``EVERYDOCS_DB_ADAPTER`` (e.g. mysql2), ``EVERYDOCS_DB_NAME``, ``EVERYDOCS_DB_USER``, ``EVERYDOCS_DB_PASSWORD``, ``EVERYDOCS_DB_HOST``, ``EVERYDOCS_DB_PORT``.
-   You can do so by editing the ``start-app.sh`` script.
-5. Configure the folder where documents are stored in config/settings.yml.
-   The default location is ``/var/everydocs-files/``.
-6. Install required dependencies by running: ``bundle install``
-7. You might want to change the port of the application in ``start-app.sh`` and ``stop-app.sh``.
-8. Setup your database by running: ``rake db:migrate RAILS_ENV=production``. If there is an error, you might need to execute the following command, to
-set an encryption key: ``EDITOR="mate --wait" bin/rails credentials:edit``
-9. Make sure that the environment variable ``SECRET_KEY_BASE`` has a value.
-   If not, you can generate a key by running ``rake secret`` and set it by editing the ``start-app.sh`` script.
-   In case your not using production as your environment, the environment variable ``SECRET_KEY_BASE_DEV`` or ``SECRET_KEY_BASE_TEST`` needs to be set.
-10. Start your Rails server: ``./start-app.sh``
-11. Access the application on http://localhost:5678 or configure any kind of proxy forwarding in your webserver.
-12. If you wish to use this application in your web browser, consider to install [EveryDocs Web](https://github.com/jonashellmann/everydocs-web/)!
-13. Stop the application: ``./stop-app.sh``
-
-## Backup
-
-To backup your application, you can simply use the backup functionality of your
-database. For example, a MySQL/MariaDB DBMS may use mysqldump.
-
-Additionally you have to backup the place where the documents are stored. You
-can configure this in config/settings.yml. To restore, just put the documents back in that location.
-
-## Routes Documentation
-
-To learn about the routes the API offers, run the following command: ``rake routes``
+   -- Insert into a table insights about customer engagement based on recent Shopify orders
+   INSERT INTO shopify_insights.customer_engagement (customer_id, predicted_engagement_score)
+      SELECT
+         o.customer_id AS customer_id,
+         r.predicted_engagement_score AS predicted_engagement_score
+      FROM shopify_data.orders o
+      JOIN mindsdb.customer_engagement_model r
+         WHERE
+            o.order_date > LAST
+         AND o.status = 'completed'
+      LIMIT 100
+)
+EVERY minute;
+" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">⚙️安装</font></font><a name="user-content-Installation"></a></h2><a id="user-content-️-installation-" class="anchor" aria-label="永久链接：⚙️安装" href="#️-installation-"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">要在本地或本地安装，请提取最新的</font></font><a href="https://hub.docker.com/r/mindsdb/mindsdb/tags?page=1&amp;ordering=last_updated" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Docker 映像</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：</font></font></p>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto"><pre class="notranslate"><code>docker pull mindsdb/mindsdb
+</code></pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="docker pull mindsdb/mindsdb" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">或者，使用</font></font><a href="https://pypi.org/project/MindsDB/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">pip</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：</font></font></p>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto"><pre class="notranslate"><code>pip install mindsdb
+</code></pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="pip install mindsdb" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
+<p dir="auto"><a href="https://docs.mindsdb.com/setup/self-hosted/docker" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">阅读有关安装的更多信息</font></font></a></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">🔗 数据集成</font></font><a name="user-content-DatabaseIntegrations"></a></h2><a id="user-content--data-integrations-" class="anchor" aria-label="永久链接：🔗 数据集成" href="#-data-integrations-"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">MindsDB 允许使用标准 SQL 查询数百个数据源，例如数据库（关系型和非关系型）、数据仓库、流和 SaaS 应用程序数据。</font><font style="vertical-align: inherit;">这一能力源于MindsDB将SQL转换为实时数据请求的独特能力。</font></font><a href="https://docs.mindsdb.com/data-integrations/all-data-integrations" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">您可以在此处</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">找到所有支持的集成的列表</font><font style="vertical-align: inherit;">。</font></font></p>
+<p dir="auto"><a href="https://github.com/mindsdb/mindsdb/issues/new?assignees=&amp;labels=&amp;template=feature-mindsdb-request.yaml"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">❓ 👋 缺少集成？</font></font></a></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">📖 文档</font></font><a name="user-content-Documentation"></a></h2><a id="user-content--documentation-" class="anchor" aria-label="永久链接：📖 文档" href="#-documentation-"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"></font><a href="https://docs.mindsdb.com?utm_medium=community&amp;utm_source=github&amp;utm_campaign=mindsdb%20repo" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">您可以在docs.mindsdb.com</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">找到 MindsDB 的完整文档</font><font style="vertical-align: inherit;">。</font></font></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">🤍 支持</font></font><a name="user-content-Support"></a></h2><a id="user-content--support-" class="anchor" aria-label="永久链接：🤍支持" href="#-support-"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如果您发现错误，请</font></font><a href="https://github.com/mindsdb/mindsdb/issues/new/choose"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在 GitHub 上提交问题</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">要获得社区支持，您可以：</font></font></p>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"></font><a href="https://mindsdb.com/joincommunity" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在 MindsDB Slack 社区</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">发布问题</font><font style="vertical-align: inherit;">。</font></font></li>
+<li><font style="vertical-align: inherit;"></font><a href="https://github.com/mindsdb/mindsdb/discussions"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在我们的GitHub 讨论</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">中寻求帮助</font><font style="vertical-align: inherit;">。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 MindsDB 标签在</font></font><a href="https://stackoverflow.com/questions/tagged/mindsdb" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Stackoverflow</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">上提问。</font></font></li>
+</ul>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如果您需要商业支持，请</font></font><a href="https://mindsdb.com/contact/?utm_medium=community&amp;utm_source=github&amp;utm_campaign=mindsdb%20repo" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">联系</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">MindsDB团队。</font></font></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">🤝 贡献</font></font><a name="user-content-Contributing"></a></h2><a id="user-content--contributing-" class="anchor" aria-label="永久链接：🤝 贡献" href="#-contributing-"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">开始为 MindsDB 做出贡献的一个好地方是检查我们的 GitHub 项目🏁</font></font></p>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">社区贡献者的</font></font><a href="https://github.com/mindsdb/mindsdb/projects/8"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">仪表板任务</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></li>
+<li><a href="https://github.com/mindsdb/mindsdb/issues?q=is%3Aissue+is%3Aopen+label%3Afirst-timers-only"><font style="vertical-align: inherit;"></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如果这是您第一次为开源项目做出贡献，那么</font><a href="https://github.com/mindsdb/mindsdb/issues?q=is%3Aissue+is%3Aopen+label%3Afirst-timers-only"><font style="vertical-align: inherit;">初学者只会遇到问题。</font></a></font></li>
+</ul>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">我们始终乐于接受建议，因此请随时根据您的想法提出新问题，我们可以为您提供指导！</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">任何有动力并希望参与这一旅程的人都可以成为核心团队的一员！</font><font style="vertical-align: inherit;">如果您想为该项目做出贡献，请参阅</font></font><a href="https://docs.mindsdb.com/contribute/?utm_medium=community&amp;utm_source=github&amp;utm_campaign=mindsdb%20repo" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">贡献文档</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"></font><a href="https://github.com/mindsdb/mindsdb/blob/stable/CODE_OF_CONDUCT.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">该项目随贡献者行为准则</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">一起发布</font><font style="vertical-align: inherit;">。</font><font style="vertical-align: inherit;">参与该项目即表示您同意遵守其条款。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">另外，请查看</font></font><a href="https://mindsdb.com/community?utm_medium=community&amp;utm_source=github&amp;utm_campaign=mindsdb%20repo" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">奖励和社区计划</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></p>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">💚 当前贡献者</font></font><a name="user-content-Current contributors"></a></h3><a id="user-content--current-contributors-" class="anchor" aria-label="永久链接：💚 当前贡献者" href="#-current-contributors-"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<a href="https://github.com/mindsdb/mindsdb/graphs/contributors">
+  <img src="https://camo.githubusercontent.com/9ff599899c3eece3844ba602a4c1c5f18712837b1436832d6f902c018fccdfd0/68747470733a2f2f636f6e7472696275746f72732d696d672e7765622e6170702f696d6167653f7265706f3d6d696e647364622f6d696e64736462" data-canonical-src="https://contributors-img.web.app/image?repo=mindsdb/mindsdb" style="max-width: 100%;">
+</a>
+<p dir="auto"><font style="vertical-align: inherit;"></font><a href="https://contributors-img.web.app" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">由贡献者-img</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">制作</font><font style="vertical-align: inherit;">。</font></font></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">🔔 订阅更新</font></font></h2><a id="user-content--subscribe-to-updates" class="anchor" aria-label="固定链接：🔔 订阅更新" href="#-subscribe-to-updates"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">加入我们的</font></font><a href="https://mindsdb.com/joincommunity" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Slack 社区</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">并订阅每月的</font></font><a href="https://mindsdb.com/newsletter/?utm_medium=community&amp;utm_source=github&amp;utm_campaign=mindsdb%20repo" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">开发者通讯</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">，以获取产品更新、有关 MindsDB 活动和竞赛的信息以及教程等有用内容。</font></font></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">⚖️ 许可证</font></font><a name="user-content-License"></a></h2><a id="user-content-️-license-" class="anchor" aria-label="永久链接：⚖️ 许可证" href="#️-license-"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">详细的许可信息，请参阅</font></font><a href="https://github.com/mindsdb/mindsdb/blob/master/LICENSE"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">LICENSE文件</font></font></a></p>
+</article></div>
