@@ -99,27 +99,7 @@ CREATE JOB <span class="pl-c1">mindsdb</span>.<span class="pl-c1">shopify_custom
 )
 EVERY minute;
 </pre><div class="zeroclipboard-container">
-    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="---This query creates a job in MindsDB to analyze Shopify orders.
----It predicts customer engagement scores based on recent completed orders
----and inserts these insights into a customer_engagement table.
----The job runs every minute, providing ongoing updates to the engagement scores.
-
-CREATE JOB mindsdb.shopify_customer_engagement_job AS (
-
-   -- Insert into a table insights about customer engagement based on recent Shopify orders
-   INSERT INTO shopify_insights.customer_engagement (customer_id, predicted_engagement_score)
-      SELECT
-         o.customer_id AS customer_id,
-         r.predicted_engagement_score AS predicted_engagement_score
-      FROM shopify_data.orders o
-      JOIN mindsdb.customer_engagement_model r
-         WHERE
-            o.order_date > LAST
-         AND o.status = 'completed'
-      LIMIT 100
-)
-EVERY minute;
-" tabindex="0" role="button">
+   
       <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
     <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
 </svg>
